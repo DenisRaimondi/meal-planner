@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { format, addDays, subDays, startOfWeek, isSameDay, getDay } from 'date-fns';
 import { it } from 'date-fns/locale';
-import { FaCalendarAlt, FaAngleRight, FaCheckCircle, FaExclamationCircle, FaArrowLeft, FaArrowRight, FaShoppingBasket, FaUtensils } from 'react-icons/fa';
+import { FaCalendarAlt, FaAngleRight, FaCheckCircle, FaExclamationCircle, FaArrowLeft, FaArrowRight, FaShoppingBasket, FaUtensils, FaFireAlt } from 'react-icons/fa';
 import { mealTypes, foods } from '../data/foodData';
 import { weeklyMealPlan } from '../data/weeklyMealPlan';
 import { foodPreparations } from '../data/preparationGuide';
@@ -82,11 +82,20 @@ const MealPlan = () => {
     return food ? food.name : 'Sconosciuto';
   };
   
-  // Funzione per ottenere istruzioni di preparazione
-  const getFoodPreparation = (foodId) => {
-    return foodPreparations[foodId];
+  // Funzione per ottenere l'alimento completo dall'ID
+  const getFood = (foodId) => {
+    return foods.find(f => f.id === foodId);
   };
   
+  // Funzione per calcolare le calorie in base alla quantità
+  const calculateCalories = (foodId, amount) => {
+    const food = getFood(foodId);
+    if (!food) return 0;
+    
+    return Math.round((food.calories * amount) / 100);
+  };
+
+  // Funzione per ottenere le raccomandazioni di pasto
   const getMealRecommendations = (mealId) => {
     // Ottiene il giorno della settimana dalla data corrente (0-6, dove 0 è domenica)
     const dayOfWeek = getDay(currentDate);
@@ -101,6 +110,28 @@ const MealPlan = () => {
     
     // Fallback al piano predefinito per quel tipo di pasto
     return [];
+  };
+  
+  // Funzione per calcolare le calorie totali di un pasto
+  const calculateMealTotalCalories = (recommendations) => {
+    return recommendations.reduce((total, item) => {
+      return total + calculateCalories(item.foodId, item.amount);
+    }, 0);
+  };
+  
+  // Funzione per calcolare le calorie totali giornaliere
+  const calculateDailyTotalCalories = () => {
+    let total = 0;
+    mealTypes.forEach(meal => {
+      const recommendations = getMealRecommendations(meal.id);
+      total += calculateMealTotalCalories(recommendations);
+    });
+    return total;
+  };
+  
+  // Funzione per ottenere istruzioni di preparazione
+  const getFoodPreparation = (foodId) => {
+    return foodPreparations[foodId];
   };
 
   // Genera un array di 7 giorni a partire da weekStartDate
@@ -145,6 +176,9 @@ const MealPlan = () => {
     return isSameDay(date, new Date());
   };
 
+  // Calcola il totale delle calorie giornaliere
+  const dailyTotalCalories = calculateDailyTotalCalories();
+
   return (
     <div className="meal-plan">
       {!showShoppingList ? (
@@ -161,6 +195,12 @@ const MealPlan = () => {
             <button className="nav-arrow" onClick={goToNextDay}>
               <FaArrowRight />
             </button>
+          </div>
+          
+          {/* Totale calorie giornaliere */}
+          <div className="daily-calories">
+            <FaFireAlt className="fire-icon" />
+            <span>Totale giornaliero: <strong>{dailyTotalCalories} kcal</strong></span>
           </div>
           
           {/* Calendarietto settimanale */}
@@ -190,6 +230,7 @@ const MealPlan = () => {
             {mealTypes.map((meal) => {
               const isCompleted = todayCompletedMeals.includes(meal.id);
               const recommendations = getMealRecommendations(meal.id);
+              const mealTotalCalories = calculateMealTotalCalories(recommendations);
               
               return (
                 <div 
@@ -208,7 +249,10 @@ const MealPlan = () => {
                       )}
                       <h3>{meal.name}</h3>
                     </div>
-                    <FaAngleRight className={`expand-icon ${expandedMeal === meal.id ? 'rotated' : ''}`} />
+                    <div className="meal-header-right">
+                      <span className="meal-calories">{mealTotalCalories} kcal</span>
+                      <FaAngleRight className={`expand-icon ${expandedMeal === meal.id ? 'rotated' : ''}`} />
+                    </div>
                   </div>
                   
                   {expandedMeal === meal.id && (
@@ -218,12 +262,16 @@ const MealPlan = () => {
                         {recommendations.map((item, index) => {
                           const preparation = getFoodPreparation(item.foodId);
                           const isExpanded = expandedFoodItem === item.foodId;
+                          const itemCalories = calculateCalories(item.foodId, item.amount);
                           
                           return (
                             <React.Fragment key={index}>
                               <li className={preparation ? 'has-preparation' : ''}>
                                 <div className="food-item-header">
-                                  <span>{getFoodName(item.foodId)} - {item.amount}g</span>
+                                  <span className="food-name-amount">
+                                    {getFoodName(item.foodId)} - {item.amount}g 
+                                    <span className="food-calories">({itemCalories} kcal)</span>
+                                  </span>
                                   {preparation && (
                                     <button
                                       className="preparation-toggle"

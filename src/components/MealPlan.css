@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .nav-arrow {
@@ -48,6 +48,26 @@
   font-size: 1.2rem;
   font-weight: 500;
   text-transform: capitalize;
+}
+
+/* Calorie giornaliere */
+.daily-calories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f9f4;
+  padding: 0.5rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  border: 1px dashed #4a9f62;
+}
+
+.fire-icon {
+  color: #ff6b35;
+  margin-right: 0.5rem;
+  font-size: 1rem;
 }
 
 /* Calendario settimanale */
@@ -155,6 +175,22 @@
   font-weight: 500;
 }
 
+.meal-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.meal-calories {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ff6b35;
+  background-color: #fff0eb;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
 .meal-completed-icon {
   color: #4CAF50;
   margin-right: 0.75rem;
@@ -217,6 +253,18 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+.food-name-amount {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.food-calories {
+  font-size: 0.8rem;
+  color: #ff6b35;
+  margin-left: 0.4rem;
 }
 
 .preparation-toggle {
@@ -419,6 +467,11 @@
     font-size: 1rem;
   }
   
+  .daily-calories {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+  
   .week-day {
     width: 2.2rem;
     padding: 0.4rem 0;
@@ -440,8 +493,17 @@
     font-size: 0.95rem;
   }
   
+  .meal-calories {
+    font-size: 0.8rem;
+    padding: 0.15rem 0.4rem;
+  }
+  
   .foods-list li {
     font-size: 0.85rem;
+  }
+  
+  .food-calories {
+    font-size: 0.75rem;
   }
   
   .preparation-toggle {
