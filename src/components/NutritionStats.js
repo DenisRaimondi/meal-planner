@@ -63,7 +63,7 @@ const NutritionStats = () => {
     datasets: [
       {
         label: 'Grammi consigliati',
-        data: [128, 230, 68], // Valori giornalieri target (basati sul profilo)
+        data: [141, 253, 75], // Valori giornalieri target (basati sul profilo)
         backgroundColor: 'rgba(74, 159, 98, 0.6)',
       },
       {
@@ -137,19 +137,19 @@ const NutritionStats = () => {
         <h3>Obiettivi Giornalieri</h3>
         <div className="daily-goal-item">
           <span className="goal-label">Calorie</span>
-          <span className="goal-value">2050 kcal</span>
+          <span className="goal-value">2250 kcal</span>
         </div>
         <div className="daily-goal-item">
           <span className="goal-label">Proteine (25%)</span>
-          <span className="goal-value">128g</span>
+          <span className="goal-value">141g</span>
         </div>
         <div className="daily-goal-item">
           <span className="goal-label">Carboidrati (45%)</span>
-          <span className="goal-value">230g</span>
+          <span className="goal-value">253g</span>
         </div>
         <div className="daily-goal-item">
           <span className="goal-label">Grassi (30%)</span>
-          <span className="goal-value">68g</span>
+          <span className="goal-value">75g</span>
         </div>
       </div>
     </div>
