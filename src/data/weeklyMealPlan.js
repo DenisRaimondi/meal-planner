@@ -26,7 +26,7 @@ export const weeklyMealPlan = {
     lunch: {
       name: 'Pranzo',
       recommendations: [
-        { foodId: 'brown_rice', amount: 70 },
+        { foodId: 'brown_rice', amount: 40 },
         { foodId: 'chicken_breast', amount: 120 },
         { foodId: 'broccoli', amount: 150 },
         { foodId: 'olive_oil', amount: 10 },
@@ -70,7 +70,7 @@ export const weeklyMealPlan = {
     lunch: {
       name: 'Pranzo',
       recommendations: [
-        { foodId: 'whole_wheat_pasta', amount: 80 },
+        { foodId: 'whole_wheat_pasta', amount: 50 },
         { foodId: 'turkey_breast', amount: 120 },
         { foodId: 'zucchini', amount: 150 },
         { foodId: 'olive_oil', amount: 10 },
@@ -87,7 +87,7 @@ export const weeklyMealPlan = {
       name: 'Cena',
       recommendations: [
         { foodId: 'salmon', amount: 130 },
-        { foodId: 'brown_rice', amount: 60 },
+        { foodId: 'brown_rice', amount: 40 },
         { foodId: 'broccoli', amount: 150 },
         { foodId: 'olive_oil', amount: 5 },
       ]
@@ -131,7 +131,7 @@ export const weeklyMealPlan = {
       name: 'Cena',
       recommendations: [
         { foodId: 'white_fish', amount: 150 },
-        { foodId: 'brown_rice', amount: 60 },
+        { foodId: 'brown_rice', amount: 40 },
         { foodId: 'carrot', amount: 150 },
         { foodId: 'olive_oil', amount: 5 },
       ]
@@ -158,7 +158,7 @@ export const weeklyMealPlan = {
     lunch: {
       name: 'Pranzo',
       recommendations: [
-        { foodId: 'brown_rice', amount: 70 },
+        { foodId: 'brown_rice', amount: 40 },
         { foodId: 'turkey_breast', amount: 120 },
         { foodId: 'broccoli', amount: 150 },
         { foodId: 'olive_oil', amount: 10 },
@@ -202,7 +202,7 @@ export const weeklyMealPlan = {
     lunch: {
       name: 'Pranzo',
       recommendations: [
-        { foodId: 'whole_wheat_pasta', amount: 80 },
+        { foodId: 'whole_wheat_pasta', amount: 50 },
         { foodId: 'chicken_breast', amount: 120 },
         { foodId: 'carrot', amount: 150 },
         { foodId: 'olive_oil', amount: 10 },
@@ -246,7 +246,7 @@ export const weeklyMealPlan = {
     lunch: {
       name: 'Pranzo',
       recommendations: [
-        { foodId: 'brown_rice', amount: 70 },
+        { foodId: 'brown_rice', amount: 40 },
         { foodId: 'white_fish', amount: 150 },
         { foodId: 'zucchini', amount: 150 },
         { foodId: 'olive_oil', amount: 10 },
@@ -290,7 +290,7 @@ export const weeklyMealPlan = {
     lunch: {
       name: 'Pranzo',
       recommendations: [
-        { foodId: 'brown_rice', amount: 70 },
+        { foodId: 'brown_rice', amount: 40 },
         { foodId: 'salmon', amount: 130 },
         { foodId: 'carrot', amount: 150 },
         { foodId: 'olive_oil', amount: 10 },
