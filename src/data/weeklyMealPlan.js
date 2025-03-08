@@ -11,7 +11,7 @@ export const weeklyMealPlan = {
     breakfast: {
       name: 'Colazione',
       recommendations: [
-        { foodId: 'oats', amount: 50 },
+        { foodId: 'oats', amount: 70 },
         { foodId: 'banana', amount: 100 },
         { foodId: 'eggs', amount: 50 }, // 1 uovo circa
       ]
@@ -20,14 +20,14 @@ export const weeklyMealPlan = {
       name: 'Spuntino Mattutino',
       recommendations: [
         { foodId: 'apple', amount: 150 },
-        { foodId: 'nuts', amount: 15 },
+        { foodId: 'nuts', amount: 25 },
       ]
     },
     lunch: {
       name: 'Pranzo',
       recommendations: [
         { foodId: 'brown_rice', amount: 60 },
-        { foodId: 'chicken_breast', amount: 120 },
+        { foodId: 'chicken_breast', amount: 150 },
         { foodId: 'broccoli', amount: 150 },
         { foodId: 'olive_oil', amount: 10 },
       ]
@@ -55,7 +55,7 @@ export const weeklyMealPlan = {
     breakfast: {
       name: 'Colazione',
       recommendations: [
-        { foodId: 'oats', amount: 50 },
+        { foodId: 'oats', amount: 70 },
         { foodId: 'berries', amount: 100 },
         { foodId: 'tofu', amount: 50 },
       ]
@@ -71,7 +71,7 @@ export const weeklyMealPlan = {
       name: 'Pranzo',
       recommendations: [
         { foodId: 'whole_wheat_pasta', amount: 70 },
-        { foodId: 'turkey_breast', amount: 120 },
+        { foodId: 'turkey_breast', amount: 150 },
         { foodId: 'zucchini', amount: 150 },
         { foodId: 'olive_oil', amount: 10 },
       ]
@@ -80,7 +80,7 @@ export const weeklyMealPlan = {
       name: 'Spuntino Pomeridiano',
       recommendations: [
         { foodId: 'apple', amount: 150 },
-        { foodId: 'nuts', amount: 10 },
+        { foodId: 'nuts', amount: 25 },
       ]
     },
     dinner: {
@@ -99,7 +99,7 @@ export const weeklyMealPlan = {
     breakfast: {
       name: 'Colazione',
       recommendations: [
-        { foodId: 'oats', amount: 40 },
+        { foodId: 'oats', amount: 70 },
         { foodId: 'apple', amount: 150 },
         { foodId: 'eggs', amount: 100 }, // 2 uova circa
       ]
@@ -108,14 +108,14 @@ export const weeklyMealPlan = {
       name: 'Spuntino Mattutino',
       recommendations: [
         { foodId: 'berries', amount: 150 },
-        { foodId: 'nuts', amount: 15 },
+        { foodId: 'nuts', amount: 25 },
       ]
     },
     lunch: {
       name: 'Pranzo',
       recommendations: [
         { foodId: 'sweet_potato', amount: 150 },
-        { foodId: 'chicken_breast', amount: 120 },
+        { foodId: 'chicken_breast', amount: 150 },
         { foodId: 'spinach', amount: 150 },
         { foodId: 'olive_oil', amount: 10 },
       ]
@@ -143,7 +143,7 @@ export const weeklyMealPlan = {
     breakfast: {
       name: 'Colazione',
       recommendations: [
-        { foodId: 'oats', amount: 50 },
+        { foodId: 'oats', amount: 70 },
         { foodId: 'banana', amount: 120 },
         { foodId: 'tofu', amount: 60 },
       ]
@@ -159,7 +159,7 @@ export const weeklyMealPlan = {
       name: 'Pranzo',
       recommendations: [
         { foodId: 'brown_rice', amount: 60 },
-        { foodId: 'turkey_breast', amount: 120 },
+        { foodId: 'turkey_breast', amount: 150 },
         { foodId: 'broccoli', amount: 150 },
         { foodId: 'olive_oil', amount: 10 },
       ]
@@ -168,7 +168,7 @@ export const weeklyMealPlan = {
       name: 'Spuntino Pomeridiano',
       recommendations: [
         { foodId: 'berries', amount: 100 },
-        { foodId: 'nuts', amount: 10 },
+        { foodId: 'nuts', amount: 25 },
       ]
     },
     dinner: {
@@ -187,7 +187,7 @@ export const weeklyMealPlan = {
     breakfast: {
       name: 'Colazione',
       recommendations: [
-        { foodId: 'oats', amount: 50 },
+        { foodId: 'oats', amount: 70 },
         { foodId: 'berries', amount: 100 },
         { foodId: 'eggs', amount: 50 }, // 1 uovo circa
       ]
@@ -196,14 +196,14 @@ export const weeklyMealPlan = {
       name: 'Spuntino Mattutino',
       recommendations: [
         { foodId: 'banana', amount: 120 },
-        { foodId: 'nuts', amount: 15 },
+        { foodId: 'nuts', amount: 25 },
       ]
     },
     lunch: {
       name: 'Pranzo',
       recommendations: [
         { foodId: 'whole_wheat_pasta', amount: 70 },
-        { foodId: 'chicken_breast', amount: 120 },
+        { foodId: 'chicken_breast', amount: 150 },
         { foodId: 'carrot', amount: 150 },
         { foodId: 'olive_oil', amount: 10 },
       ]
@@ -231,7 +231,7 @@ export const weeklyMealPlan = {
     breakfast: {
       name: 'Colazione',
       recommendations: [
-        { foodId: 'oats', amount: 50 },
+        { foodId: 'oats', amount: 70 },
         { foodId: 'berries', amount: 100 },
         { foodId: 'avocado', amount: 30 },
       ]
@@ -240,7 +240,7 @@ export const weeklyMealPlan = {
       name: 'Spuntino Mattutino',
       recommendations: [
         { foodId: 'apple', amount: 150 },
-        { foodId: 'nuts', amount: 15 },
+        { foodId: 'nuts', amount: 25 },
       ]
     },
     lunch: {
@@ -262,7 +262,7 @@ export const weeklyMealPlan = {
     dinner: {
       name: 'Cena',
       recommendations: [
-        { foodId: 'chicken_breast', amount: 120 },
+        { foodId: 'chicken_breast', amount: 150 },
         { foodId: 'sweet_potato', amount: 150 },
         { foodId: 'broccoli', amount: 150 },
         { foodId: 'olive_oil', amount: 5 },
@@ -275,7 +275,7 @@ export const weeklyMealPlan = {
     breakfast: {
       name: 'Colazione',
       recommendations: [
-        { foodId: 'oats', amount: 50 },
+        { foodId: 'oats', amount: 70 },
         { foodId: 'apple', amount: 150 },
         { foodId: 'eggs', amount: 100 }, // 2 uova circa
       ]
@@ -306,7 +306,7 @@ export const weeklyMealPlan = {
     dinner: {
       name: 'Cena',
       recommendations: [
-        { foodId: 'turkey_breast', amount: 120 },
+        { foodId: 'turkey_breast', amount: 150 },
         { foodId: 'sweet_potato', amount: 150 },
         { foodId: 'spinach', amount: 100 },
         { foodId: 'cucumber', amount: 100 },
