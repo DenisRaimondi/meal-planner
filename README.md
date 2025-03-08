@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# 🍽️ Piano Alimentare
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Un'applicazione React per la pianificazione dei pasti personalizzata, con focus su diete specifiche per persone con gastrite e obiettivi di tonificazione muscolare.
 
-## Available Scripts
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-NETLIFY-APP-ID/deploy-status)](https://app.netlify.com/sites/YOUR-NETLIFY-SITE-NAME/deploys)
 
-In the project directory, you can run:
+## 📱 Demo
 
-### `npm start`
+L'applicazione è disponibile online su [meal-planner.netlify.app](https://meal-planner.netlify.app) (sostituisci con il tuo URL Netlify quando disponibile)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Caratteristiche
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Piano alimentare diversificato** per ogni giorno della settimana
+- **Indicazioni dettagliate sulla preparazione** di ogni alimento
+- **Consigli specifici per la gastrite** e per l'aumento della massa muscolare
+- **Lista della spesa automatica** basata sui pasti pianificati
+- **Interfaccia ottimizzata per iPhone** con design mobile-first
+- **Salvataggio locale dei dati** tramite localStorage
 
-### `npm test`
+## 🥗 Funzionalità Principali
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Visualizzazione giornaliera dei pasti consigliati
+- Navigazione settimanale per pianificare in anticipo
+- Istruzioni di preparazione per ciascun alimento
+- Monitoraggio del completamento dei pasti
+- Statistiche nutrizionali e consigli alimentari
 
-### `npm run build`
+## 🚀 Tecnologie Utilizzate
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React 19
+- CSS3 con approccio mobile-first
+- date-fns per la gestione delle date
+- react-icons per le icone
+- Chart.js e react-chartjs-2 per i grafici
+- LocalStorage per la persistenza dei dati
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Installazione e Avvio Locale
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clona il repository
+git clone https://github.com/DenisRaimondi/meal-planner.git
 
-### `npm run eject`
+# Entra nella directory del progetto
+cd meal-planner
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Installa le dipendenze
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Avvia il server di sviluppo
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+L'applicazione sarà disponibile all'indirizzo [http://localhost:3000](http://localhost:3000)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 Build e Deploy
 
-## Learn More
+### Build Locale
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Deploy su Netlify
 
-### Code Splitting
+Questo repository è configurato per il deploy automatico su Netlify.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Collegati a [Netlify](https://www.netlify.com/)
+2. Crea un nuovo sito da Git
+3. Seleziona questo repository GitHub
+4. Usa le seguenti impostazioni:
+   - Branch da deployare: `master`
+   - Comando di build: `npm run build`
+   - Directory di pubblicazione: `build`
 
-### Analyzing the Bundle Size
+Le configurazioni necessarie sono già presenti nel file `netlify.toml` alla radice del progetto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📝 Licenza
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT

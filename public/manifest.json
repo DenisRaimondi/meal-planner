@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Piano Alimentare",
+  "name": "Piano Alimentare | Meal Planner",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,10 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#4a9f62",
+  "background_color": "#f5f5f5",
+  "description": "Pianificazione dei pasti giornalieri personalizzata per persone con gastrite",
+  "lang": "it-IT",
+  "orientation": "portrait",
+  "categories": ["health", "food", "lifestyle"]
 }
