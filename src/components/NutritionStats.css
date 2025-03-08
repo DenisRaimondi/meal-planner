@@ -1,0 +1,129 @@
+.nutrition-stats {
+  padding: 1rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.nutrition-stats h2 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.progress-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress-card {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.progress-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.progress-bar-container {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #4a9f62, #6abf84);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-value {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a9f62;
+}
+
+.chart-container {
+  margin: 1.5rem 0;
+  height: 220px;
+}
+
+.daily-goals {
+  margin-top: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.daily-goals h3 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+}
+
+.daily-goal-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.daily-goal-item:last-child {
+  border-bottom: none;
+}
+
+.goal-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.goal-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Media queries per iPhone */
+@media (max-width: 375px) {
+  .nutrition-stats {
+    padding: 0.75rem;
+    margin: 1rem auto;
+  }
+  
+  .progress-cards {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .progress-card {
+    padding: 0.75rem;
+  }
+  
+  .chart-container {
+    height: 180px;
+  }
+  
+  .daily-goals {
+    padding: 0.75rem;
+  }
+  
+  .goal-label, .goal-value {
+    font-size: 0.85rem;
+  }
+}
